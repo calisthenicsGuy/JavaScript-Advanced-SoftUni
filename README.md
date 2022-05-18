@@ -3,7 +3,7 @@ In the "JS Advanced" course you will gain in-depth knowledge of the JavaScript l
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-</br>
+
 [*1. Syntax, Functions and Statements-Lab*](https://github.com/calisthenicsGuy/JavaScript-Advanced-SoftUni/tree/main/1.%20Syntax%2C%20Functions%20and%20Statements-Lab)
 
 [*2. Syntax, Functions and Statements-Exercises*](https://github.com/calisthenicsGuy/JavaScript-Advanced-SoftUni/tree/main/2.%20Syntax%2C%20Functions%20and%20Statements-Exercises)
