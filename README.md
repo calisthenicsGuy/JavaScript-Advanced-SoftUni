@@ -4,10 +4,10 @@ In the "JS Advanced" course you will gain in-depth knowledge of the JavaScript l
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
-[*1. Syntax, Functions and Statements-Lab*](https://github.com/calisthenicsGuy/JavaScript-Advanced-SoftUni/tree/main/1.%20Syntax%2C%20Functions%20and%20Statements-Lab)
+1. [*Syntax, Functions and Statements-Lab*](https://github.com/calisthenicsGuy/JavaScript-Advanced-SoftUni/tree/main/1.%20Syntax%2C%20Functions%20and%20Statements-Lab)
 
-[*2. Syntax, Functions and Statements-Exercises*](https://github.com/calisthenicsGuy/JavaScript-Advanced-SoftUni/tree/main/2.%20Syntax%2C%20Functions%20and%20Statements-Exercises)
+2. [*Syntax, Functions and Statements-Exercises*](https://github.com/calisthenicsGuy/JavaScript-Advanced-SoftUni/tree/main/2.%20Syntax%2C%20Functions%20and%20Statements-Exercises)
 
-[*3. Arrays and Nested Arrays-Lab*](https://github.com/calisthenicsGuy/JavaScript-Advanced-SoftUni/tree/main/3.%20Arrays%20and%20Nested%20Arrays-Lab)
+3. [*Arrays and Nested Arrays-Lab*](https://github.com/calisthenicsGuy/JavaScript-Advanced-SoftUni/tree/main/3.%20Arrays%20and%20Nested%20Arrays-Lab)
 
-[*4. Objects and Composition-Lab*](https://github.com/calisthenicsGuy/JavaScript-Advanced-SoftUni/tree/main/4.%20Objects%20and%20Composition-Lab)
+4. [*Objects and Composition-Lab*](https://github.com/calisthenicsGuy/JavaScript-Advanced-SoftUni/tree/main/4.%20Objects%20and%20Composition-Lab)
