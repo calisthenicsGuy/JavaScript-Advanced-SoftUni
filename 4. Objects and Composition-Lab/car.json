@@ -1,0 +1,13 @@
+{
+    "model" : "BMW",
+    "year" : 2015,
+    "facelift" : true,
+    "owner" : {
+        "name" : "Pesho",
+        "age" : 30
+    },
+    "extars" : [
+        "climatronik",
+        { "name" : "monitor", "price" : 1000 }
+    ]
+}
