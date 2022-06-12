@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Introduction</title>
+</head>
+<body>
+    <h1 id="currName">Hello world!</h1>
+    <br>
+
+    <h2>Cars:</h2>
+    <h3>
+        <ul>
+            <li>Auid</li>
+            <li>Mercedes</li>
+            <li>BMW</li>
+        </ul>
+    </h3>
+
+    <p><button onclick="message()">Send</button></p>
+    <p><button onclick="recieve()">Recieve</button></p>
+    <p><button onclick="changeTitle()">Title</button></p>
+    <p>
+        <form action="#"><input type="text" id="newName"/></form> : <button onclick="changeingName()">Change title:</button>
+    </p>	
+
+    <script>
+        function changeingName() {
+            let newNameElement = document.getElementById('newName').value;
+            let currNameElement = document.getElementById('currName');
+            currNameElement.textContent = newNameElement;
+        }
+
+        // function changeTitle() {
+        //     let currTitleElement = document.getElementById('currName');
+        //     //currTitleElement.textContent = 'Hello from JS'; // .textContent will not peocess HTML attributes !
+        //     currTitleElement.innerHTML = 'Hello from <em>JS</em>!'
+        // }
+    </script>
+
+
+    <script src="demo.js"></script>
+
+    <script>
+        function message() {
+            let msg = 'Message send';
+            console.log(msg);
+        }
+    </script>   
+</body>
+</html>
