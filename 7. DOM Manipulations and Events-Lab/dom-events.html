@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>DOM Events | Movie List</h1>
+
+    <ul id="movie-list">
+        
+    </ul>
+    <br>
+
+    <input type="text" name="new-movie" />
+        <button onclick="addMovie()">Add</button>
+
+    <script>
+        function addMovie() {
+            let unorderedListOfMovie = document.getElementById('movie-list');
+            let newMovieName = document.querySelector('input[name="new-movie"]');
+
+            let newMovieElement = document.createElement('li');
+            newMovieElement.textContent = newMovieName.value;
+            newMovieName.value = '';
+
+            unorderedListOfMovie.appendChild(newMovieElement);
+        }
+
+
+        // document.addEventListener('keypress', addMovie);
+        // document.addEventListener('mouseup', addMovie);
+        // document.addEventListener('touchstart', addMovie);
+        // document.addEventListener('resize', addMovie);
+        // document.addEventListener('focus', addMovie);
+        // document.addEventListener('blur', addMovie);
+    </script>
+</body>
+</html>

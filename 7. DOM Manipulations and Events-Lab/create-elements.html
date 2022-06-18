@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+</head>
+<body>
+    <h1>Movie List</h1>
+
+    <ul id="movie-list">
+        <li>The Matrix</li>
+    </ul>
+
+    <script>
+        let movieListElement = document.getElementById('movie-list');
+        let newMoveLiElement = document.createElement('li');
+
+        newMoveLiElement.textContent = 'Man on Fire';
+        let emptyCloneLiElement = newMoveLiElement.cloneNode(); // just empty <li> element
+        let cloneLiElement = newMoveLiElement.cloneNode(true); // clone <li> element with his child ('Man on Fire')
+
+            
+        movieListElement.appendChild(newMoveLiElement);
+        movieListElement.appendChild(newMoveLiElement); // nothing will happend
+        movieListElement.appendChild(emptyCloneLiElement);
+        // prepend - add first (as first child on the element)
+        movieListElement.prepend(cloneLiElement);
+
+        cloneLiElement.textContent += ' II'; // Man on Fire II
+
+        let elementToReplace = document.createElement('li');
+        elementToReplace.textContent = 'replace-example';
+        movieListElement.appendChild(elementToReplace);
+        console.log(elementToReplace.textContent);
+        
+        // movieListElement.replaceChild(cloneLiElement, elementToReplace)
+    </script>
+</body>
+</html>

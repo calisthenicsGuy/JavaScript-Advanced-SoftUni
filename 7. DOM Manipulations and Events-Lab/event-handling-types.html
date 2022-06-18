@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        li {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>--Movie List--</h1>
+
+    <ul id="movie-list">
+        <li>First Movie</li>
+    </ul>
+
+    <br>
+    <input type="text" name="add-field" />  
+        <div class="btn">
+            <button>Add</button>
+            <button>Scratch</button>
+        </div>
+
+    <script>
+        let buttonElements = document.querySelectorAll('.btn button');
+        let unorderedListElements = document.getElementById('movie-list');
+        let newMovieName = document.querySelector('input[name="add-field"]');
+
+        let buttonElementsArray = Array.from(buttonElements);
+        buttonElementsArray.forEach(btn => {
+            btn.addEventListener('click', function(e) {
+                if (e.currentTarget.textContent == 'Add') {
+                    let newMovieElement = document.createElement('li');
+                    newMovieElement.textContent = newMovieName.value;
+                    unorderedListElements.appendChild(newMovieElement);
+                } else if (e.currentTarget.textContent == 'Scratch') {
+                    let listArray = Array.from(unorderedListElements.childNodes);
+                    listArray.shift();
+
+                    let targetMovie = listArray.find(x => x.textContent == newMovieName.value);
+                    targetMovie.style.textDecoration = 'line-through';
+                }
+        })
+    });
+        
+
+    // let listArray = Array.from(unorderedListElements.childNodes);
+
+    // listArray.forEach(el => 
+    //     el.addEventListener('click', (e) => {
+    //         e.currentTarget.style.textDecoration = 'line-through'
+    //     })
+    // );
+    </script>
+</body>
+</html>
