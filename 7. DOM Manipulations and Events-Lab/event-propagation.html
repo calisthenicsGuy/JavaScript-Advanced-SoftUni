@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="Parent" style="padding: 40px; background-color: aqua;">
+        <h1>Parent</h1>
+            <div id="Child"  style="padding: 40px; background-color: blue;">
+                <h1>Child</h1>
+            </div>
+    </div>
+
+    <script>
+        let parentElement = document.querySelector('#Parent');
+        let childElement = document.querySelector('#Child');
+
+        parentElement.addEventListener('click', (e) => {
+            console.log('Parent clicked!');
+        });
+
+        childElement.addEventListener('click', (e) => {
+            console.log('Child clicked!'); // when click on -Child div element- the output will be: 
+                                           // Child clicked! 
+                                           // Parent clicked!
+                                           // because by default event propagation is bubbling
+
+
+        // and when add third paraneter on the -addEventListener- true the output will be: 
+                                           // Parent clicked! 
+                                           // Child clicked!
+        // childElement.addEventListener('click', (e) => {
+        //     console.log('Child clicked!');
+        // }, true
+        });
+
+        // addEvenetListener(event, listener, boolean(event propagation - use capturing))
+
+        // Stop Propagation
+
+        // preventDefault();
+    </script>
+</body>
+</html>
