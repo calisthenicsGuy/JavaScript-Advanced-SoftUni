@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .change-color {
+            background-color: aqua;
+            font-style: italic;
+            font-size: 35px;
+        }
+
+        .fancy-btn {
+            font-style: italic;
+            font-size: 15px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>DOM Classes</h1>
+
+    <div id="text">Some text here</div>
+
+    <br>
+
+    <input type="text" /> <button id="send-button" disabled="disabled">Send</button>
+
+    <br>
+    <br>
+
+    <button id="click-one">Click here</button> - <button id="click-two">Click here</button> -----
+    <button style="text-align: center;" id="btn-stop">Stop</button>
+</body>
+
+<script>
+    let textElement = document.querySelector('#text');
+    
+    textElement.addEventListener('mouseover', (e) => {
+        e.currentTarget.classList.add('change-color');
+    })
+
+    textElement.addEventListener('mouseout', (e) => {
+        e.currentTarget.classList.remove('change-color');
+    })
+</script>
+
+<script>
+    let btnElement = document.querySelector('#send-button');
+    let textInputElement = document.querySelector('input[type="text"]');
+
+    textInputElement.addEventListener('click', (e) => {
+        setTimeout(() => {
+            btnElement.removeAttribute('disabled', false);
+        }, 3000)
+    })
+
+    btnElement.addEventListener('click', () => {
+        textInputElement.setAttribute('disabled', 'disabled');
+        btnElement.setAttribute('disabled', true);
+    })
+</script>
+
+<script>
+    let buttonOneElement = document.getElementById('click-one');
+    let buttonTwoElement = document.getElementById('click-two');
+
+    buttonOneElement.addEventListener('click', (e) => {
+        buttonOneElement.setAttribute('disabled', true);
+        buttonOneElement.classList.remove('fancy-btn');
+        buttonOneElement.textContent = 'Click here!'
+
+        buttonTwoElement.removeAttribute('disabled', false)
+        buttonTwoElement.classList.add('fancy-btn');
+        buttonTwoElement.textContent = 'Now click here!';
+    })
+
+    buttonTwoElement.addEventListener('click', (e) => {
+        buttonTwoElement.setAttribute('disabled', true);
+        buttonTwoElement.classList.remove('fancy-btn');
+        buttonTwoElement.textContent = 'Click here!'
+
+        buttonOneElement.removeAttribute('disabled', false)
+        buttonOneElement.classList.add('fancy-btn');
+        buttonOneElement.textContent = 'Now click here!';
+    })
+
+    let stopButtonElement = document.getElementById('btn-stop');
+
+    stopButtonElement.addEventListener('click', () => {
+        buttonOneElement.setAttribute('disabled', true);
+        buttonTwoElement.setAttribute('disabled', true);
+        
+        buttonOneElement.classList.remove('fancy-btn');
+        buttonTwoElement.classList.remove('fancy-btn');
+
+        buttonOneElement.textContent = 'Now you can not click here :)';
+        buttonTwoElement.textContent = 'Now you can not click here :)'
+    })
+</script>
+</html>
