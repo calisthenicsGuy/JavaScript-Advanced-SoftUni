@@ -14,4 +14,14 @@ In the "JS Advanced" course you will gain in-depth knowledge of the JavaScript l
 
 [**5. Objects and Composition-Exercises**](https://github.com/calisthenicsGuy/JavaScript-Advanced-SoftUni/tree/main/5.%20Objects%20and%20Composition-Exercises)
 
-[**6. DOM_Introduction-Lab**](https://github.com/calisthenicsGuy/JavaScript-Advanced-SoftUni/tree/main/6.%20DOM_Introduction-Lab)
+[**6. DOM Introduction-Lab**](https://github.com/calisthenicsGuy/JavaScript-Advanced-SoftUni/tree/main/6.%20DOM_Introduction-Lab)
+
+[**7. DOM Manipulations and Events-Lab**](https://github.com/calisthenicsGuy/JavaScript-Advanced-SoftUni/tree/main/07.%20DOM%20Manipulations%20and%20Events-Lab)
+
+[**8. Advanced Functions-Lab**](https://github.com/calisthenicsGuy/JavaScript-Advanced-SoftUni/tree/main/08.%20Advanced%20Functions-Lab)
+
+[**9. Unit Testing and Error Handling**](https://github.com/calisthenicsGuy/JavaScript-Advanced-SoftUni/tree/main/09.%20Unit%20Testing%20and%20Error%20Handling)
+
+[**10. Classes-Lab**](https://github.com/calisthenicsGuy/JavaScript-Advanced-SoftUni/tree/main/10.%20Classes-Lab)
+
+[**11. Prototypes and Inheritance-Lab**](https://github.com/calisthenicsGuy/JavaScript-Advanced-SoftUni/tree/main/11.%20Prototypes%20and%20Inheritance-Lab)
