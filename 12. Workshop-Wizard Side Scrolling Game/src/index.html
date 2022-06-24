@@ -6,11 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SoftUni Wizard</title>
 
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>Wizard Game</h1>
+    <div class="game">
+        <div class="start-screen">Press to Start</div>
+        <div class="game-screen hidden">
+            <div class="wizard"></div>
+        </div>
+    </div>
 
-    <script src="/js/main.js"></script>
+    <script src="js/gameState.js"></script>
+    <script src="js/gameObjects.js"></script>
+    <script src="js/gameEngine.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

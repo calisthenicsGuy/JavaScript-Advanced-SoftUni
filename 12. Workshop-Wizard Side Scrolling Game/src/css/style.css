@@ -1,0 +1,50 @@
+body {
+    font-family: 'Consolas';
+    margin: 0;
+}
+
+@keyframes backgroundmove {
+    from {background-color: lightblue;}
+    to {background-color: rgb(159, 192, 202);}
+}
+
+.game {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(97, 152, 171);
+}
+
+.start-screen {
+    text-align: center;
+    font-size: 47px;
+    background-color: lightgreen;
+    padding: 30px;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%);
+}
+
+.start-screen:hover {
+    background-color: rgb(96, 228, 96);
+    cursor: pointer;
+}
+
+.game-screen {
+    width: 100vw;
+    height: 100vh;
+    animation: backgroundmove 6s infinite;
+    transition: 5s;
+    transform: scale();
+}
+
+.wizard {
+    background-image: url('/images/wizard.png');
+    position: absolute;
+    width: 82px;
+    height: 100px;
+}
+
+.hidden {
+    display: none;
+}
